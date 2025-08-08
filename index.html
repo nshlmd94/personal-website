@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anshul Modi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --link-color: #6c5ce7; /* fallback color */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      background-color: #fdfdfc; /* softened white */
+      color: #3c3d40;
+      line-height: 1.6;
+      max-width: 65ch;
+      margin: 5rem auto;
+      padding: 0 2rem;
+      font-size: 1.08rem;
+      position: relative;
+      border-left: 3px solid var(--link-color);
+    }
+
+    .intro {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--link-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: 1.75rem;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      position: relative;
+    }
+
+    a:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      width: 100%;
+      background-color: var(--link-color);
+      transform: scaleX(1);
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #3c3d40;
+    }
+
+    .email {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+        border-left: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <p class="intro">I'm Anshul.</p>
+
+  <p>
+    Learning is a lot more accessible now than it’s ever been. I’m spending time learning to program and building small products, simply because I want to <em>build</em> things.
+  </p>
+
+  <p>
+    I was part of the early team at <a href="https://www.sprinto.com" target="_blank">Sprinto</a>, working across go-to-market, strategy, and operations. I learned a lot (especially what not to do). Before that, I designed and built <a href="https://github.com/munch-money" target="_blank">tools</a> with a couple of friends to help solopreneurs run their business operations. In an alternate universe, I worked in investing—first in early-stage startups in South Asia, then in North American mid-market companies.
+  </p>
+
+  <p>
+    I grew up in a semi-urban town in South Asia. I wrote my first program in Logo when I was five (FD 100, RT 90, and a turtle that followed instructions; it blew my mind). My dad, in his 30s at the time, had hired a tutor to teach himself programming. His curiosity stuck with me. I’d write code on paper and on the weekend run it on his office computer. Eventually I picked up BASIC, then some C and Java. It didn’t last long and I ended up studying economics and statistics instead.
+  </p>
+
+  <p>
+    What has stayed constant is that I like working on messy, hard-to-define problems. I don’t do well with structures that reward hierarchy over performance and curiosity or favor deterministic decision-making over probabilistic thinking.
+  </p>
+
+  <p>
+    I also like house music, books, game theory, popular science, <em><a href="https://artsandculture.google.com/entity/die-br%C3%BCcke/m02xdhk?categoryId=art-movement" target="_blank">Die Brücke</a></em>, Sri Lankan colonial architecture, and <a href="https://youtu.be/E2evC2xTNWg?si=pBisdS_hrCWDNnM7" target="_blank">shitty robots</a>. I’m drawn to <a href="https://www.texasmonthly.com/travel/wide-open-spaces/" target="_blank">wide open spaces</a> and obsessed with <a href="https://designmuseum.dk/en/exhibition/the-future-is-present/" target="_blank">design of the future</a>.
+  </p>
+
+  <div class="footer">
+    <p class="email">You can reach me at <a href="mailto:a@nshlmd.com">a@nshlmd.com</a>. I check it almost obsessively.</p>
+  </div>
+
+  <script>
+    const colors = [
+      "#e63946", // Deep Rosy Red
+      "#ff5733", // Fiery Orange
+      "#ff006e", // Vivid Pink
+      "#6a00f4", // Royal Electric Purple
+      "#3a0ca3", // Indigo Glow
+      "#0f4c81", // Rich Ocean Blue
+      "#007f5f", // Deep Teal Green
+      "#118ab2", // Bold Aqua Blue
+      "#f72585", // Hot Raspberry
+      "#ef233c"  // Crimson Red
+    ];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.documentElement.style.setProperty('--link-color', randomColor);
+  </script>
+
+</body>
+</html>
